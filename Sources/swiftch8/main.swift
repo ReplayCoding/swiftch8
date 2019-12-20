@@ -137,8 +137,7 @@ for opcode_uint16 in rom {
         }
         default: do {
             print(  "(invalid) ---", 
-                    String(opcode, radix: 16),
-                    opcode_tuple
+                    String(opcode, radix: 16)
                 )       
         }
     }
