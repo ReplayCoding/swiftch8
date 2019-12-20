@@ -136,7 +136,7 @@ for opcode_uint16 in rom {
             print("LD", "V" +  get_X(opcode) + ",", "[I]")
         }
         default: do {
-            print(  "UNKNOWN OPCODE!!! ---", 
+            print(  "(invalid) ---", 
                     String(opcode, radix: 16),
                     opcode_tuple
                 )       
