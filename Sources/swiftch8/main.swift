@@ -1,6 +1,6 @@
 import Glibc
 
-var rom = [UInt16](repeating: 0, count: 0xE00)
+var rom = [UInt16](repeating: 0xFFFF, count: 0xE00)
 let rom_file = fopen("./brix.ch8", "r")
 func get_NNN(_ opcode: UInt16) -> String {
     return String(opcode & 0x0FFF, radix: 16)
